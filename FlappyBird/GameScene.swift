@@ -313,13 +313,15 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             
             wall.addChild(upper)
             
-            // スコアアップ用ノードを鳥に設定
+            // スコアアップ用ノードを設定
             let scoreNode = SKNode()
             scoreNode.position = CGPoint(x: upper.size.width + self.bird.size.width / 2, y: self.frame.height / 2.0)
             scoreNode.physicsBody = SKPhysicsBody(rectangleOf: CGSize(width: upper.size.width, height: self.frame.size.height))
             scoreNode.physicsBody?.isDynamic = false
             scoreNode.physicsBody?.categoryBitMask = self.scoreCategory
             scoreNode.physicsBody?.contactTestBitMask = self.birdCategory
+            
+            wall.addChild(scoreNode)
             
             // スプライトにアクションを設定
             wall.run(wallAnimation)
