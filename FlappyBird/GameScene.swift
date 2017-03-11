@@ -33,10 +33,6 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     var bestItemScoreLabelNode: SKLabelNode!
     let userDefaults: UserDefaults = UserDefaults.standard
     
-    var itemNode:SKLabelNode!
-    
-    
-    
     /**
      * シーンが表示されたときに呼ばれるメソッド
      * @param view

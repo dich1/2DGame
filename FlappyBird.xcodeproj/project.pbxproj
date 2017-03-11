@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		420E4B371E73BAEC00742EF1 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 420E4B361E73BAEC00742EF1 /* AVFoundation.framework */; };
+		420E4B391E73BBB500742EF1 /* coin.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 420E4B381E73BBB500742EF1 /* coin.mp3 */; };
 		42659E771E62D2A800047D15 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42659E761E62D2A800047D15 /* GameScene.swift */; };
 		429CD6DF1E59AA3B008A46C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429CD6DE1E59AA3B008A46C4 /* AppDelegate.swift */; };
 		429CD6E11E59AA3B008A46C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429CD6E01E59AA3B008A46C4 /* ViewController.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		420E4B361E73BAEC00742EF1 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		420E4B381E73BBB500742EF1 /* coin.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = coin.mp3; sourceTree = "<group>"; };
 		42659E761E62D2A800047D15 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		429CD6DB1E59AA3B008A46C4 /* FlappyBird.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlappyBird.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		429CD6DE1E59AA3B008A46C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				420E4B371E73BAEC00742EF1 /* AVFoundation.framework in Frameworks */,
 				429CD6F21E59AB44008A46C4 /* SpriteKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -60,6 +65,7 @@
 		429CD6DD1E59AA3B008A46C4 /* FlappyBird */ = {
 			isa = PBXGroup;
 			children = (
+				420E4B381E73BBB500742EF1 /* coin.mp3 */,
 				429CD6DE1E59AA3B008A46C4 /* AppDelegate.swift */,
 				429CD6E01E59AA3B008A46C4 /* ViewController.swift */,
 				42659E761E62D2A800047D15 /* GameScene.swift */,
@@ -74,6 +80,7 @@
 		429CD6F01E59AB44008A46C4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				420E4B361E73BAEC00742EF1 /* AVFoundation.framework */,
 				429CD6F11E59AB44008A46C4 /* SpriteKit.framework */,
 			);
 			name = Frameworks;
@@ -142,6 +149,7 @@
 				429CD6E91E59AA3B008A46C4 /* LaunchScreen.storyboard in Resources */,
 				429CD6E61E59AA3B008A46C4 /* Assets.xcassets in Resources */,
 				429CD6E41E59AA3B008A46C4 /* Main.storyboard in Resources */,
+				420E4B391E73BBB500742EF1 /* coin.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
