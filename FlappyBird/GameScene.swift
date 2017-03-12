@@ -52,9 +52,11 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         scrollNode = SKNode()
         addChild(scrollNode)
         
-        // 壁用のノードを追加
+        // ノードを初期化
         wallNode = SKNode()
+        itemNode = SKNode()
         scrollNode.addChild(wallNode)
+        scrollNode.addChild(itemNode)
         
         // スプライトの作成
         setupGround()
@@ -407,6 +409,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         // 2つのアニメーションの順番を設定
         let itemAnimation = SKAction.sequence([moveItem, removeItem])
         
+        
         // アイテムを生成するアクションを作成
         let createItemAnimation = SKAction.run({
             // スプライトを生成
@@ -435,6 +438,9 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
         // シーンにアクションを設定
         itemNode.run(repeatForeverAnimation)
+        
+        // スプライトを追加
+        addChild(self.item)
         
     }
     
